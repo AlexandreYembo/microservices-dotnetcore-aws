@@ -4,8 +4,8 @@
     "windowsAuthentication": false, 
     "anonymousAuthentication": true, 
     "iisExpress": {
-      "applicationUrl": "http://localhost:45039",
-      "sslPort": 44394
+      "applicationUrl": "http://localhost:60806",
+      "sslPort": 44303
     }
   },
   "profiles": {
@@ -17,11 +17,21 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
+    //use Https when you have certificate
+    // "api_account": {
+    //   "commandName": "Project",
+    //   "launchBrowser": true,
+    //   "launchUrl": "api/values",
+    //   "applicationUrl": "https://localhost:5001;http://localhost:5000",
+    //   "environmentVariables": {
+    //     "ASPNETCORE_ENVIRONMENT": "Development"
+    //   }
+    // }
     "api_account": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/values",
-      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "applicationUrl": "http://localhost:5001;http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

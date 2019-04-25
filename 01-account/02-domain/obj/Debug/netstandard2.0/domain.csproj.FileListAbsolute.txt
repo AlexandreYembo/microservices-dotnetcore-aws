@@ -1,0 +1,9 @@
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\02-domain\bin\Debug\netstandard2.0\domain.deps.json
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\02-domain\bin\Debug\netstandard2.0\domain.dll
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\02-domain\bin\Debug\netstandard2.0\domain.pdb
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\02-domain\obj\Debug\netstandard2.0\domain.csprojAssemblyReference.cache
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\02-domain\obj\Debug\netstandard2.0\domain.csproj.CoreCompileInputs.cache
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\02-domain\obj\Debug\netstandard2.0\domain.AssemblyInfoInputs.cache
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\02-domain\obj\Debug\netstandard2.0\domain.AssemblyInfo.cs
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\02-domain\obj\Debug\netstandard2.0\domain.dll
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\02-domain\obj\Debug\netstandard2.0\domain.pdb

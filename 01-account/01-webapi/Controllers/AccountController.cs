@@ -5,11 +5,11 @@ namespace webapi.Controllers
 {
     public class AccountController : ControllerBase
     {
-        private readonly IAccountServices _accountServices;
+        private readonly IAccountRespository _accountRepository;
 
-        public AccountController(IAccountServices accountServices)
+        public AccountController(IAccountRespository accountRepository)
         {
-            _accountServices = accountServices;
+            _accountRepository = accountRepository;
         }
     }
 }

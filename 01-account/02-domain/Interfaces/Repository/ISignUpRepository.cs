@@ -3,8 +3,8 @@ using domain.Models;
 
 namespace domain.Interfaces.Repository
 {
-    public interface ISignUpRepository
+    public interface ISignUpRepository<T>
     {
-         Task<ISignUpRepository> SignUp(Login entity);
+         Task<T> SignUp(Login entity);
     }
 }

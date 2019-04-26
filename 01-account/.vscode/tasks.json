@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/api-account/api-account.csproj"
+                "${workspaceFolder}/01-webapi/webapi.csproj"
             ],
             "problemMatcher": "$tsc"
         },
@@ -17,7 +17,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/api-account/api-account.csproj"
+                "${workspaceFolder}/01-webapi/webapi.csproj"
             ],
             "problemMatcher": "$tsc"
         },
@@ -28,7 +28,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/api-account/api-account.csproj"
+                "${workspaceFolder}/01-webapi/webapi.csproj"
             ],
             "problemMatcher": "$tsc"
         }

@@ -6,23 +6,23 @@ using domain.Models;
 
 namespace domain.Services
 {
-    public class AccountService : IAccountService
+    public class AccountService<T> : IAccountService<T>
     {
-        protected readonly ISignUpRepository  _signUpRepository;
-        protected readonly IConfirmRepository  _confirmRepository;
-        public AccountService(ISignUpRepository  signUpRepository, IConfirmRepository confirmRepository)
+        protected readonly ISignUpRepository<T>  _signUpRepository;
+        protected readonly IConfirmRepository<T>  _confirmRepository;
+        public AccountService(ISignUpRepository<T>  signUpRepository, IConfirmRepository<T> confirmRepository)
         {
             _signUpRepository = signUpRepository;
             _confirmRepository = confirmRepository;
         }
-        public Task<IdentityResult> Confirm(Confirm entity)
+        public async Task<T> Confirm(Confirm entity)
         {
-            throw new System.NotImplementedException();
+            return await _confirmRepository.Confirm(entity);
         }
 
-        public Task<IdentityResult> SignUp(Login entity)
+        public async Task<T> SignUp(Login entity)
         {
-            _signUpRepository.SignUp(entity);
+           return await _signUpRepository.SignUp(entity);
         }
     }
 }

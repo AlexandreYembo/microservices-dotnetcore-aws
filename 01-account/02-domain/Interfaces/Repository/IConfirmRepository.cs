@@ -3,8 +3,8 @@ using domain.Models;
 
 namespace domain.Interfaces.Repository
 {
-    public interface IConfirmRepository
+    public interface IConfirmRepository<T>
     {
-         Task<IConfirmRepository> Confirm(Confirm entity);
+         Task<T> Confirm(Confirm entity);
     }
 }

@@ -1,0 +1,17 @@
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\01-webapi\bin\Debug\netcoreapp2.2\webapi.deps.json
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\01-webapi\bin\Debug\netcoreapp2.2\webapi.runtimeconfig.json
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\01-webapi\bin\Debug\netcoreapp2.2\webapi.runtimeconfig.dev.json
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\01-webapi\bin\Debug\netcoreapp2.2\webapi.dll
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\01-webapi\bin\Debug\netcoreapp2.2\webapi.pdb
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\01-webapi\bin\Debug\netcoreapp2.2\domain.dll
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\01-webapi\bin\Debug\netcoreapp2.2\domain.pdb
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\01-webapi\obj\Debug\netcoreapp2.2\webapi.csprojAssemblyReference.cache
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\01-webapi\obj\Debug\netcoreapp2.2\webapi.csproj.CoreCompileInputs.cache
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\01-webapi\obj\Debug\netcoreapp2.2\webapi.RazorAssemblyInfo.cache
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\01-webapi\obj\Debug\netcoreapp2.2\webapi.RazorAssemblyInfo.cs
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\01-webapi\obj\Debug\netcoreapp2.2\webapi.AssemblyInfoInputs.cache
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\01-webapi\obj\Debug\netcoreapp2.2\webapi.AssemblyInfo.cs
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\01-webapi\obj\Debug\netcoreapp2.2\webapi.RazorTargetAssemblyInfo.cache
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\01-webapi\obj\Debug\netcoreapp2.2\webapi.csproj.CopyComplete
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\01-webapi\obj\Debug\netcoreapp2.2\webapi.dll
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\01-webapi\obj\Debug\netcoreapp2.2\webapi.pdb

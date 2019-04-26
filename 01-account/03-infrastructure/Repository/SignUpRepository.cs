@@ -7,12 +7,11 @@ using domain.Models;
 
 namespace infrastructure.Repository
 {
-    public class SignUpRepository : ISignUpRepository
+    public class SignUpRepository : ISignUpRepository<IdentityResult>
     {
         private readonly UserManager<CognitoUser> _userManager;
         private readonly CognitoUserPool _pool;
         
-        private IdentityResult result {get; set; }
 
         public SignUpRepository(UserManager<CognitoUser> userManager, CognitoUserPool pool)
         {
@@ -20,7 +19,7 @@ namespace infrastructure.Repository
             _pool = pool;
         }
 
-        public async Task<ISignUpRepository> SignUp(Login entity)
+        public async Task<IdentityResult> SignUp(Login entity)
         {
             var user = _pool.GetUser(entity.Email);
 
@@ -30,10 +29,8 @@ namespace infrastructure.Repository
 
             user.Attributes.Add("Name", "Alexandre");
 
-            result = await _userManager.CreateAsync(user, entity.Password).ConfigureAwait(false);
-            return this;
+            IdentityResult result = await _userManager.CreateAsync(user, entity.Password).ConfigureAwait(false);
+            return result;
         }
-
-        public static implicit operator IdentityResult(SignUpRepository service) => service.result;
     }
 }

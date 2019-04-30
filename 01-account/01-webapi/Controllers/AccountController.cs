@@ -19,6 +19,8 @@ namespace webapi.Controllers
         }
 
         [HttpPost]
-        public async Task<IdentityResult> SignUp(Login entity) => await _accountService.SignUp(entity);
+        public async Task<IdentityResult> SignUp(Login entity) {
+            return await _accountService.SignUp(entity);
+        } 
     }
 }

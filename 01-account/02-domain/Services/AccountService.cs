@@ -12,8 +12,8 @@ namespace domain.Services
         protected readonly IConfirmRepository<T>  _confirmRepository;
         public AccountService(ISignUpRepository<T>  signUpRepository, IConfirmRepository<T> confirmRepository)
         {
-            _signUpRepository = signUpRepository;
-            _confirmRepository = confirmRepository;
+             _signUpRepository = signUpRepository;
+             _confirmRepository = confirmRepository;
         }
         public async Task<T> Confirm(Confirm entity)
         {

@@ -29,7 +29,8 @@
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
-          "domain": "1.0.0"
+          "domain": "1.0.0",
+          "infrastructure": "1.0.0"
         },
         "runtime": {
           "webapi.dll": {}
@@ -629,6 +630,19 @@
         },
         "compile": {
           "domain.dll": {}
+        }
+      },
+      "infrastructure/1.0.0": {
+        "dependencies": {
+          "Amazon.AspNetCore.Identity.Cognito": "1.0.0",
+          "Amazon.Extensions.CognitoAuthentication": "1.0.3",
+          "domain": "1.0.0"
+        },
+        "runtime": {
+          "infrastructure.dll": {}
+        },
+        "compile": {
+          "infrastructure.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3623,6 +3637,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

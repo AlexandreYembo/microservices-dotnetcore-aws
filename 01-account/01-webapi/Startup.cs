@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using domain.Interfaces.Repository;
 using domain.Interfaces.Services;
 using domain.Services;
+using infrastructure.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,7 +33,7 @@ namespace webapi
             services.AddCognitoIdentity();  //Configure de AWS Cognito SDK
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            services.AddTransient<IAccountService<IdentityResult>, AccountService<IdentityResult>>();
+            new ServicesRegister(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

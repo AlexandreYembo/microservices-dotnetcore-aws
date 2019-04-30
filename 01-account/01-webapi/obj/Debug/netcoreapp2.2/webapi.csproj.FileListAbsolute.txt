@@ -15,3 +15,5 @@ C:\Git_Repositories\microservices-dotnetcore-aws\01-account\01-webapi\obj\Debug\
 C:\Git_Repositories\microservices-dotnetcore-aws\01-account\01-webapi\obj\Debug\netcoreapp2.2\webapi.csproj.CopyComplete
 C:\Git_Repositories\microservices-dotnetcore-aws\01-account\01-webapi\obj\Debug\netcoreapp2.2\webapi.dll
 C:\Git_Repositories\microservices-dotnetcore-aws\01-account\01-webapi\obj\Debug\netcoreapp2.2\webapi.pdb
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\01-webapi\bin\Debug\netcoreapp2.2\infrastructure.dll
+C:\Git_Repositories\microservices-dotnetcore-aws\01-account\01-webapi\bin\Debug\netcoreapp2.2\infrastructure.pdb

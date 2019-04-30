@@ -4540,6 +4540,21 @@
         "runtime": {
           "bin/placeholder/domain.dll": {}
         }
+      },
+      "infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Amazon.AspNetCore.Identity.Cognito": "1.0.0",
+          "Amazon.Extensions.CognitoAuthentication": "1.0.3",
+          "domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/infrastructure.dll": {}
+        }
       }
     }
   },
@@ -12378,6 +12393,11 @@
       "type": "project",
       "path": "../02-domain/domain.csproj",
       "msbuildProject": "../02-domain/domain.csproj"
+    },
+    "infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../03-infrastructure/infrastructure.csproj",
+      "msbuildProject": "../03-infrastructure/infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -12387,7 +12407,8 @@
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
-      "domain >= 1.0.0"
+      "domain >= 1.0.0",
+      "infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12420,6 +12441,9 @@
           "projectReferences": {
             "C:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account\\02-domain\\domain.csproj": {
               "projectPath": "C:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account\\02-domain\\domain.csproj"
+            },
+            "C:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account\\03-infrastructure\\infrastructure.csproj": {
+              "projectPath": "C:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account\\03-infrastructure\\infrastructure.csproj"
             }
           }
         }

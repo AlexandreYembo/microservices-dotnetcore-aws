@@ -5,6 +5,6 @@ namespace domain.Interfaces.Repository
 {
     public interface ISignUpRepository<T>
     {
-         Task<T> SignUp(Login entity);
+         Task<T> SignUp(SignUp entity);
     }
 }

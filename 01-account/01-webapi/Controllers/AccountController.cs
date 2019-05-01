@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace webapi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/account/")]
     [ApiController]
     public class AccountController : ControllerBase
     {
@@ -18,9 +18,10 @@ namespace webapi.Controllers
             _accountService = accountService;
         }
 
-        [HttpPost]
-        public async Task<IdentityResult> SignUp(Login entity) {
-            return await _accountService.SignUp(entity);
-        } 
+        [HttpPost, Route("signup")]
+        public async Task<IdentityResult> SignUp(SignUp entity)  => await _accountService.SignUp(entity);
+
+        [HttpPost, Route("confirm")]
+        public async Task<IdentityResult> Confirm(Confirm entity) => await _accountService.Confirm(entity);
     }
 }

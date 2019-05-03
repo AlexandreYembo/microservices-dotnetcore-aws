@@ -29,5 +29,9 @@ namespace webapi.Controllers
         [HttpPost, Route("login")]
         public async Task<AccountResult> Login(Login entity) =>
             await _accountService.Login(entity);
+
+        [HttpPost, Route("forgotPassword")]
+        public async Task<AccountResult> ForgotPassword(Login entity) =>
+            await _accountService.ForgotPassword(entity);
     }
 }

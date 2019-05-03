@@ -28,5 +28,7 @@ namespace domain.Services
         public async Task<AccountResult> Login(Login entity) => 
             await _loginRepository.Login(entity);
 
+        public async Task<AccountResult> ForgotPassword(Login entity) =>
+            await _loginRepository.ForgotPassword(entity);
     }
 }

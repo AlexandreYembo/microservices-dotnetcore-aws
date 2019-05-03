@@ -1,11 +1,9 @@
 namespace domain.Models
 {
-    public class Login
+    public class ResetPasword
     {
         public string Username{get;set;}
-        public string Password { get; set; }
-        public bool RememberMe { get; set; }
-
         public string Token { get; set; }
+        public string NewPassword { get; set; }
     }
 }

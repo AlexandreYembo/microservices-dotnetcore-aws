@@ -8,5 +8,6 @@ namespace domain.Interfaces.Services
          Task<AccountResult> SignUp(SignUp entity);
          Task<AccountResult> Confirm(Confirm entity);
          Task<AccountResult> Login(Login entity);
+         Task<AccountResult> ForgotPassword(Login entity);
     }
 }

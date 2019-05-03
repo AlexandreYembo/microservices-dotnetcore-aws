@@ -11,17 +11,23 @@ namespace webapi.Controllers
     [ApiController]
     public class AccountController : ControllerBase
     {
-        private readonly IAccountService<IdentityResult> _accountService;
+        private readonly IAccountService _accountService;
 
-        public AccountController(IAccountService<IdentityResult> accountService)
+        public AccountController(IAccountService accountService)
         {
             _accountService = accountService;
         }
 
         [HttpPost, Route("signup")]
-        public async Task<IdentityResult> SignUp(SignUp entity)  => await _accountService.SignUp(entity);
+        public async Task<AccountResult> SignUp(SignUp entity) =>
+            await _accountService.SignUp(entity);
 
         [HttpPost, Route("confirm")]
-        public async Task<IdentityResult> Confirm(Confirm entity) => await _accountService.Confirm(entity);
+        public async Task<AccountResult> Confirm(Confirm entity) =>
+            await _accountService.Confirm(entity);
+
+        [HttpPost, Route("login")]
+        public async Task<AccountResult> Login(Login entity) =>
+            await _accountService.Login(entity);
     }
 }

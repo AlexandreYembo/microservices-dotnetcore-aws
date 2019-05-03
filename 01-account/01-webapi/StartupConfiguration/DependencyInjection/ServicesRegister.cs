@@ -6,11 +6,11 @@ using Microsoft.Extensions.DependencyInjection;
 namespace webapi
 {
     //Register dependency injection for Services classes
-    public class ServicesRegister : RepositoryRegister
+    public class ServicesRegister : RepositoriesRegister
     {
         public ServicesRegister(IServiceCollection services) : base(services)
         {
-            services.AddTransient<IAccountService<IdentityResult>, AccountService<IdentityResult>>();
+            services.AddTransient<IAccountService, AccountService>();
         }
     }
 }

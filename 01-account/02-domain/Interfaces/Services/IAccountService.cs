@@ -3,9 +3,10 @@ using domain.Models;
 
 namespace domain.Interfaces.Services
 {
-    public interface IAccountService<T>
+    public interface IAccountService
     {
-         Task<T> SignUp(SignUp entity);
-         Task<T> Confirm(Confirm entity);
+         Task<AccountResult> SignUp(SignUp entity);
+         Task<AccountResult> Confirm(Confirm entity);
+         Task<AccountResult> Login(Login entity);
     }
 }

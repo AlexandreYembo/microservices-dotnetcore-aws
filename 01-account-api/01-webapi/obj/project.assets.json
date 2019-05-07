@@ -12418,11 +12418,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account\\01-webapi\\webapi.csproj",
+      "projectUniqueName": "c:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account-api\\01-webapi\\webapi.csproj",
       "projectName": "webapi",
-      "projectPath": "C:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account\\01-webapi\\webapi.csproj",
+      "projectPath": "c:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account-api\\01-webapi\\webapi.csproj",
       "packagesPath": "C:\\Users\\Alexandre Yembo\\.nuget\\packages\\",
-      "outputPath": "C:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account\\01-webapi\\obj\\",
+      "outputPath": "c:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account-api\\01-webapi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12439,11 +12439,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account\\02-domain\\domain.csproj": {
-              "projectPath": "C:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account\\02-domain\\domain.csproj"
+            "c:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account-api\\02-domain\\domain.csproj": {
+              "projectPath": "c:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account-api\\02-domain\\domain.csproj"
             },
-            "C:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account\\03-infrastructure\\infrastructure.csproj": {
-              "projectPath": "C:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account\\03-infrastructure\\infrastructure.csproj"
+            "c:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account-api\\03-infrastructure\\infrastructure.csproj": {
+              "projectPath": "c:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account-api\\03-infrastructure\\infrastructure.csproj"
             }
           }
         }

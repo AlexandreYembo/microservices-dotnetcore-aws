@@ -7154,11 +7154,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account\\03-infrastructure\\infrastructure.csproj",
+      "projectUniqueName": "c:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account-api\\03-infrastructure\\infrastructure.csproj",
       "projectName": "infrastructure",
-      "projectPath": "C:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account\\03-infrastructure\\infrastructure.csproj",
+      "projectPath": "c:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account-api\\03-infrastructure\\infrastructure.csproj",
       "packagesPath": "C:\\Users\\Alexandre Yembo\\.nuget\\packages\\",
-      "outputPath": "C:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account\\03-infrastructure\\obj\\",
+      "outputPath": "c:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account-api\\03-infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7175,8 +7175,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account\\02-domain\\domain.csproj": {
-              "projectPath": "C:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account\\02-domain\\domain.csproj"
+            "c:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account-api\\02-domain\\domain.csproj": {
+              "projectPath": "c:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account-api\\02-domain\\domain.csproj"
             }
           }
         }

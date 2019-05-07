@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account\\02-domain\\domain.csproj",
+      "projectUniqueName": "c:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account-api\\02-domain\\domain.csproj",
       "projectName": "domain",
-      "projectPath": "c:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account\\02-domain\\domain.csproj",
+      "projectPath": "c:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account-api\\02-domain\\domain.csproj",
       "packagesPath": "C:\\Users\\Alexandre Yembo\\.nuget\\packages\\",
-      "outputPath": "c:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account\\02-domain\\obj\\",
+      "outputPath": "c:\\Git_Repositories\\microservices-dotnetcore-aws\\01-account-api\\02-domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

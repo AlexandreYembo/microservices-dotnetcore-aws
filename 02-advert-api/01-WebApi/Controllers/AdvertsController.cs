@@ -19,14 +19,17 @@ namespace WebApi.Controllers
             _advertsService = advertsService;
         }
 
-        // POST api/values
+        // POST api/adverts/create
         [HttpPost]
-        public void Add([FromBody] Advert model) => 
+        [Route("Create")]
+        [ProducesResponseType(404), ProducesResponseType(201, Type = typeof(Advert))]
+        public void Create([FromBody] Advert model) => 
             _advertsService.Add(model);
 
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] ConfirmAdvertModel model) => 
+        // PUT api/adverts/confirm
+        [HttpPut]
+        [Route("Confirm")]
+        public void Confirm(int id, [FromBody] ConfirmAdvertModel model) => 
             _advertsService.Confirm(model);
     }
 }

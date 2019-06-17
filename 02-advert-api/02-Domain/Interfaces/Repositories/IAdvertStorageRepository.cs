@@ -8,5 +8,7 @@ namespace Domain.Interfaces.Repositories
         Task<string> Add(Advert model);
         Task Confirm(ConfirmAdvertModel model);
         Task Delete(ConfirmAdvertModel model);
+
+        Task<bool> CheckHealthAsync();
     }
 }

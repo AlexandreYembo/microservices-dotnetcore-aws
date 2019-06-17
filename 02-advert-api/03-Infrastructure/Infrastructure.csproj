@@ -8,10 +8,14 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.1.0" />
     <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.3.101.6" />
+    <PackageReference Include="Microsoft.AspNetCore.HealthChecks" Version="1.0.0" />
+     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.HealthChecks" Version="2.2.0" />
   </ItemGroup>
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <!-- <TargetFramework>netstandard2.0</TargetFramework> -->
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+      <LangVersion>7.1</LangVersion>
   </PropertyGroup>
 
 </Project>

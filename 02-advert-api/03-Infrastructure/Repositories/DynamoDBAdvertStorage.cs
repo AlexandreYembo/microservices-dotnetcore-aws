@@ -32,8 +32,7 @@ namespace Infrastructure.Repositories
             }
             return dbModel.Id;
         }
-
-        public async Task Confirm(ConfirmAdvertModel model)
+       public async Task Confirm(ConfirmAdvertModel model)
         {
             using (var client = new AmazonDynamoDBClient())
             {
@@ -52,12 +51,29 @@ namespace Infrastructure.Repositories
 
         public async Task Delete(ConfirmAdvertModel model)
         {
+            Func<DynamoDBContext, Task<AdvertDbModel>> delete = async (DynamoDBContext context) =>
+                {
+                    var record = await context.LoadAsync<AdvertDbModel>(model.Id);
+                    await context.DeleteAsync(record);
+                    return null;
+                };
+            await Run(delete);
+        }
+        public async Task<bool> CheckHealthAsync()
+        {
+            using (var client = new AmazonDynamoDBClient())
+            {
+                var tableData = await client.DescribeTableAsync("Advert");
+                return string.Compare(tableData.Table.TableStatus, "active", true) == 0;
+            }
+        }
+
+        private async Task<T> Run<T>(Func<DynamoDBContext, Task<T>> function){
             using (var client = new AmazonDynamoDBClient())
             {
                 using(var context = new DynamoDBContext(client))
                 {
-                    var record = await context.LoadAsync<AdvertDbModel>(model.Id);
-                    await context.DeleteAsync(record);
+                    return await function.Invoke(context);
                 }
             }
         }

@@ -22,59 +22,49 @@ namespace Infrastructure.Repositories
             dbModel.Id = new Guid().ToString();
             dbModel.CreationDateTime = DateTime.UtcNow;
             dbModel.Status = AdvertStatus.Pending;
-
-            using (var client = new AmazonDynamoDBClient())
-            {
-                using(var context = new DynamoDBContext(client))
-                {
-                    await context.SaveAsync(dbModel);
-                }
-            }
+            
+            await Run(async(DynamoDBContext context) =>{
+                await context.SaveAsync(dbModel);
+            });
             return dbModel.Id;
         }
        public async Task Confirm(ConfirmAdvertModel model)
         {
-            using (var client = new AmazonDynamoDBClient())
-            {
-                using(var context = new DynamoDBContext(client))
-                {
+            await Run(async (DynamoDBContext context) => {
                     var record = await context.LoadAsync<AdvertDbModel>(model.Id);
 
                     if(record == null)
                         throw new KeyNotFoundException($"A record with ID={model.Id} was not found.");
                   
                     record.Status = AdvertStatus.Active;
-                    await context.SaveAsync(record);   
-                }
-            }
+                    await context.SaveAsync(record);  
+            });
         }
 
         public async Task Delete(ConfirmAdvertModel model)
         {
-            Func<DynamoDBContext, Task<AdvertDbModel>> delete = async (DynamoDBContext context) =>
-                {
-                    var record = await context.LoadAsync<AdvertDbModel>(model.Id);
-                    await context.DeleteAsync(record);
-                    return null;
-                };
-            await Run(delete);
+            await Run(async (DynamoDBContext context) =>{
+                 var record = await context.LoadAsync<AdvertDbModel>(model.Id);
+                 await context.DeleteAsync(record);
+            });
         }
+
+        private async Task Run(Func<DynamoDBContext, Task> function){
+            using (var client = new AmazonDynamoDBClient())
+            {
+                using(var context = new DynamoDBContext(client))
+                {
+                    await function.Invoke(context);
+                }
+            }
+        }
+
         public async Task<bool> CheckHealthAsync()
         {
             using (var client = new AmazonDynamoDBClient())
             {
                 var tableData = await client.DescribeTableAsync("Advert");
                 return string.Compare(tableData.Table.TableStatus, "active", true) == 0;
-            }
-        }
-
-        private async Task<T> Run<T>(Func<DynamoDBContext, Task<T>> function){
-            using (var client = new AmazonDynamoDBClient())
-            {
-                using(var context = new DynamoDBContext(client))
-                {
-                    return await function.Invoke(context);
-                }
             }
         }
     }

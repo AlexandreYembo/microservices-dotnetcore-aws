@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/adverts")]
     [ApiController]
     public class AdvertsController : ControllerBase
     {
@@ -21,14 +21,14 @@ namespace WebApi.Controllers
 
         // POST api/adverts/create
         [HttpPost]
-        [Route("Create")]
+        [Route("create")]
         [ProducesResponseType(404), ProducesResponseType(201, Type = typeof(Advert))]
         public void Create([FromBody] Advert model) => 
             _advertsService.Add(model);
 
         // PUT api/adverts/confirm
         [HttpPut]
-        [Route("Confirm")]
+        [Route("confirm")]
         public void Confirm(int id, [FromBody] ConfirmAdvertModel model) => 
             _advertsService.Confirm(model);
     }

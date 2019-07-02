@@ -28,8 +28,7 @@ namespace Infrastructure.Repositories
             });
             return dbModel.Id;
         }
-       public async Task Confirm(ConfirmAdvertModel model)
-        {
+       public async Task Confirm(ConfirmAdvertModel model) =>
             await Run(async (DynamoDBContext context) => {
                     var record = await context.LoadAsync<AdvertDbModel>(model.Id);
 
@@ -39,23 +38,27 @@ namespace Infrastructure.Repositories
                     record.Status = AdvertStatus.Active;
                     await context.SaveAsync(record);  
             });
-        }
 
-        public async Task Delete(ConfirmAdvertModel model)
-        {
+        public async Task Delete(ConfirmAdvertModel model) =>
             await Run(async (DynamoDBContext context) =>{
                  var record = await context.LoadAsync<AdvertDbModel>(model.Id);
                  await context.DeleteAsync(record);
             });
-        }
-
+        
         private async Task Run(Func<DynamoDBContext, Task> function){
-            using (var client = new AmazonDynamoDBClient())
+            try
             {
-                using(var context = new DynamoDBContext(client))
+                using (var client = new AmazonDynamoDBClient())
                 {
-                    await function.Invoke(context);
+                    using(var context = new DynamoDBContext(client))
+                    {
+                        await function.Invoke(context);
+                    }
                 }
+            }
+            catch (System.Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
         }
 

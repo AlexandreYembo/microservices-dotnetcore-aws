@@ -10,7 +10,7 @@ namespace WebApi.Controllers
 {
     [Route("api/adverts")]
     [ApiController]
-    public class AdvertsController : ControllerBase
+    public class AdvertsController : CustomController
     {
        protected readonly IAdvertsService _advertsService;
 
@@ -23,13 +23,13 @@ namespace WebApi.Controllers
         [HttpPost]
         [Route("create")]
         [ProducesResponseType(404), ProducesResponseType(201, Type = typeof(Advert))]
-        public void Create([FromBody] Advert model) => 
-            _advertsService.Add(model);
+        public Task<ActionResult> Create([FromBody] Advert model) => 
+            GetReponse(async () => await _advertsService.Add(model));
 
         // PUT api/adverts/confirm
         [HttpPut]
         [Route("confirm")]
-        public void Confirm(int id, [FromBody] ConfirmAdvertModel model) => 
-            _advertsService.Confirm(model);
+        public Task<ActionResult> Confirm(int id, [FromBody] ConfirmAdvertModel model) => 
+            GetReponse(async () => _advertsService.Confirm(model));
     }
 }

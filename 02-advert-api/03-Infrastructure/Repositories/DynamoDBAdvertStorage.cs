@@ -58,7 +58,7 @@ namespace Infrastructure.Repositories
             }
             catch (System.Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new Exception("Error to connect on Dynamo DB", ex);
             }
         }
 

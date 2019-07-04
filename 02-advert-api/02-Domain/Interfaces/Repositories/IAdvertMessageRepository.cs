@@ -1,10 +1,11 @@
+using System.Net;
 using System.Threading.Tasks;
-using AdvertModel;
+using AdvertModel.Confirm;
 
 namespace Domain.Interfaces.Repositories
 {
     public interface IAdverMessageRepository
     {
-        Task SendConfirmMessage(ConfirmMessage model, string topicArn);
+        Task<HttpStatusCode> RaiseAdvertConfirmedMessage(ConfirmMessage model, string topicArn);
     }
 }

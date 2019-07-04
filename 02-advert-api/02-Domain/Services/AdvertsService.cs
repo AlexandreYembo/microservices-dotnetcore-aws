@@ -1,5 +1,7 @@
+using System.Net;
 using System.Threading.Tasks;
 using AdvertModel;
+using AdvertModel.Confirm;
 using AdvertModel.Messages;
 using Domain.Interfaces.Repositories;
 using Domain.Interfaces.Services;
@@ -11,7 +13,6 @@ namespace Domain.Services
         protected readonly IAdvertStorageRepository _storageRespository;
         protected readonly IAdverMessageRepository _messageRepository;
 
-
         public AdvertsService(IAdvertStorageRepository storageRepository, IAdverMessageRepository messageRepository)
         {
             _storageRespository = storageRepository;
@@ -21,19 +22,18 @@ namespace Domain.Services
         public async Task<string> Add(Advert model) =>  
            await _storageRespository.Add(model);
 
-        public async Task Confirm(ConfirmAdvertModel model, string topicArn)
+        public async Task<ConfirmAdvertModelResult> Confirm(ConfirmAdvertModel model, string topicArn)
         {
              if(model.Status == AdvertStatus.Active){
                 await _storageRespository.Confirm(model);
-               
-                var message = new AdvertConfirmedMessage()
-                {
-                    Id = model.Id, Title = "TO DO"
-                };
-
-                await _messageRepository.SendConfirmMessage(null, topicArn);
+                return new ConfirmAdvertModelResult(await SendConfirmationMessage(model.Id, topicArn));
              } 
-              await _storageRespository.Delete(model); 
+            await _storageRespository.Delete(model);
+
+            return new ConfirmAdvertModelResult(HttpStatusCode.OK, "Record is not active has been removed");              
         }
+
+        private async Task<HttpStatusCode> SendConfirmationMessage(string id, string topicArn) =>
+            await _messageRepository.RaiseAdvertConfirmedMessage(new ConfirmMessage{Id = id}, topicArn);
     }
 }

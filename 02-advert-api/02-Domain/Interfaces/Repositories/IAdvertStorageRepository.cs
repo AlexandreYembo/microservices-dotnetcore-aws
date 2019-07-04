@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using AdvertModel;
+using AdvertModel.Confirm;
 
 namespace Domain.Interfaces.Repositories
 {

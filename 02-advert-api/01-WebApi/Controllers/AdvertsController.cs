@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AdvertModel;
 using Domain.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
 namespace WebApi.Controllers
 {
@@ -12,11 +13,12 @@ namespace WebApi.Controllers
     [ApiController]
     public class AdvertsController : CustomController
     {
-       protected readonly IAdvertsService _advertsService;
-
-        public AdvertsController(IAdvertsService advertsService)
+        private readonly IAdvertsService _advertsService;
+        private readonly IConfiguration _configuration;
+        public AdvertsController(IAdvertsService advertsService, IConfiguration configuration)
         {
             _advertsService = advertsService;
+            _configuration = configuration;
         }
 
         // POST api/adverts/create
@@ -30,6 +32,6 @@ namespace WebApi.Controllers
         [HttpPut]
         [Route("confirm")]
         public Task<ActionResult> Confirm(int id, [FromBody] ConfirmAdvertModel model) => 
-            GetReponse(async () => _advertsService.Confirm(model));
+            GetReponse(async () => _advertsService.Confirm(model, _configuration.GetValue<string>("TopicArn")));
     }
 }

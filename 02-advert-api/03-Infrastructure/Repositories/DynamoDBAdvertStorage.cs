@@ -19,17 +19,19 @@ namespace Infrastructure.Repositories
         public async Task<string> Add(Advert model)
         {
             var dbModel = _mapper.Map<AdvertDbModel>(model);
-            dbModel.Id = new Guid().ToString();
             dbModel.CreationDateTime = DateTime.UtcNow;
             dbModel.Status = AdvertStatus.Pending;
             
-            await Run(async(DynamoDBContext context) =>{
+            await Run(async(DynamoDBContext context) =>
+            {
+                dbModel.Id = new Guid().ToString();
                 await context.SaveAsync(dbModel);
             });
             return dbModel.Id;
         }
        public async Task Confirm(ConfirmAdvertModel model) =>
-            await Run(async (DynamoDBContext context) => {
+            await Run(async (DynamoDBContext context) => 
+            {
                     var record = await context.LoadAsync<AdvertDbModel>(model.Id);
 
                     if(record == null)

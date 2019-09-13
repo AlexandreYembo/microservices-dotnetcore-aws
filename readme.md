@@ -1,4 +1,4 @@
-# Microservices project for study.
+# Microservices project for studing.
 ### Technologies
 #### DotNet Core version 2.2
 #### Amazon AWS

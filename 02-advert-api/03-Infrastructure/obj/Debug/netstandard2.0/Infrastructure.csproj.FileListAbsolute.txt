@@ -1,0 +1,14 @@
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\03-Infrastructure\bin\Debug\netstandard2.0\Infrastructure.deps.json
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\03-Infrastructure\bin\Debug\netstandard2.0\Infrastructure.dll
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\03-Infrastructure\bin\Debug\netstandard2.0\Infrastructure.pdb
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\03-Infrastructure\bin\Debug\netstandard2.0\AdvertModel.dll
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\03-Infrastructure\bin\Debug\netstandard2.0\Domain.dll
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\03-Infrastructure\bin\Debug\netstandard2.0\AdvertModel.pdb
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\03-Infrastructure\bin\Debug\netstandard2.0\Domain.pdb
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\03-Infrastructure\obj\Debug\netstandard2.0\Infrastructure.csprojAssemblyReference.cache
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\03-Infrastructure\obj\Debug\netstandard2.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\03-Infrastructure\obj\Debug\netstandard2.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\03-Infrastructure\obj\Debug\netstandard2.0\Infrastructure.AssemblyInfo.cs
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\03-Infrastructure\obj\Debug\netstandard2.0\Infrastructure.csproj.CopyComplete
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\03-Infrastructure\obj\Debug\netstandard2.0\Infrastructure.dll
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\03-Infrastructure\obj\Debug\netstandard2.0\Infrastructure.pdb

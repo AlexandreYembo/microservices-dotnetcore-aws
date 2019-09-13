@@ -1,0 +1,4 @@
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\03-Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.csprojAssemblyReference.cache
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\03-Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\03-Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\03-Infrastructure\obj\Debug\netcoreapp2.0\Infrastructure.AssemblyInfo.cs

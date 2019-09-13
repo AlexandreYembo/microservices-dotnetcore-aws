@@ -1,0 +1,9 @@
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\04-AdvertModel\bin\Debug\netstandard2.0\AdvertModel.deps.json
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\04-AdvertModel\bin\Debug\netstandard2.0\AdvertModel.dll
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\04-AdvertModel\bin\Debug\netstandard2.0\AdvertModel.pdb
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\04-AdvertModel\obj\Debug\netstandard2.0\AdvertModel.csprojAssemblyReference.cache
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\04-AdvertModel\obj\Debug\netstandard2.0\AdvertModel.csproj.CoreCompileInputs.cache
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\04-AdvertModel\obj\Debug\netstandard2.0\AdvertModel.AssemblyInfoInputs.cache
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\04-AdvertModel\obj\Debug\netstandard2.0\AdvertModel.AssemblyInfo.cs
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\04-AdvertModel\obj\Debug\netstandard2.0\AdvertModel.dll
+C:\Git_Repositories\microservices-dotnetcore-aws\02-advert-api\04-AdvertModel\obj\Debug\netstandard2.0\AdvertModel.pdb

@@ -1,0 +1,9 @@
+C:\Git_Repositories\microservices-dotnetcore-aws\03-advert-search-worker\bin\Debug\netcoreapp2.2\Advert.SearchWorker.deps.json
+C:\Git_Repositories\microservices-dotnetcore-aws\03-advert-search-worker\bin\Debug\netcoreapp2.2\Advert.SearchWorker.dll
+C:\Git_Repositories\microservices-dotnetcore-aws\03-advert-search-worker\bin\Debug\netcoreapp2.2\Advert.SearchWorker.pdb
+C:\Git_Repositories\microservices-dotnetcore-aws\03-advert-search-worker\obj\Debug\netcoreapp2.2\Advert.SearchWorker.csprojAssemblyReference.cache
+C:\Git_Repositories\microservices-dotnetcore-aws\03-advert-search-worker\obj\Debug\netcoreapp2.2\Advert.SearchWorker.csproj.CoreCompileInputs.cache
+C:\Git_Repositories\microservices-dotnetcore-aws\03-advert-search-worker\obj\Debug\netcoreapp2.2\Advert.SearchWorker.AssemblyInfoInputs.cache
+C:\Git_Repositories\microservices-dotnetcore-aws\03-advert-search-worker\obj\Debug\netcoreapp2.2\Advert.SearchWorker.AssemblyInfo.cs
+C:\Git_Repositories\microservices-dotnetcore-aws\03-advert-search-worker\obj\Debug\netcoreapp2.2\Advert.SearchWorker.dll
+C:\Git_Repositories\microservices-dotnetcore-aws\03-advert-search-worker\obj\Debug\netcoreapp2.2\Advert.SearchWorker.pdb
